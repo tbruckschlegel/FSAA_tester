@@ -1,0 +1,83 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: Textures - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\Tommy\LOKALE~1\Temp\RSPD5.tmp" mit Inhalten
+[
+/nologo /Zp1 /ML /W3 /Gi /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fo"Release/" /Fd"Release/" /FD -QaxW -O3 -Qip /c 
+"C:\DX8SDK\common\src\d3dapp.cpp"
+"C:\DX8SDK\common\src\d3dfile.cpp"
+"C:\DX8SDK\common\src\d3dfont.cpp"
+"C:\DX8SDK\common\src\d3dutil.cpp"
+"C:\DX8SDK\common\src\dxutil.cpp"
+"F:\Development\FSAA Tester\Textures.cpp"
+]
+Creating command line "xicl6.exe @C:\DOKUME~1\Tommy\LOKALE~1\Temp\RSPD5.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\Tommy\LOKALE~1\Temp\RSPD6.tmp" mit Inhalten
+[
+winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /pdb:none /machine:I386 /out:"Release/FSAATest.exe" 
+".\Release\d3dapp.obj"
+".\Release\d3dfile.obj"
+".\Release\d3dfont.obj"
+".\Release\d3dutil.obj"
+".\Release\dxutil.obj"
+".\Release\Textures.obj"
+".\resource.res"
+"C:\DXSDK\Lib\strmiids.lib"
+"C:\DXSDK\Lib\amstrmid.lib"
+"C:\DXSDK\Lib\d3dxof.lib"
+"C:\DXSDK\Lib\dmoguids.lib"
+"C:\DXSDK\Lib\dxguid.lib"
+"C:\DXSDK\Lib\encapi.lib"
+"C:\DXSDK\Lib\msdmo.lib"
+"C:\DXSDK\Lib\quartz.lib"
+"C:\DXSDK\Lib\dxtrans.lib"
+"C:\DXSDK\Lib\d3dx8.lib"
+"C:\DXSDK\Lib\d3d8.lib"
+]
+Erstellen der Befehlzeile "xilink6.exe @C:\DOKUME~1\Tommy\LOKALE~1\Temp\RSPD6.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+d3dapp.cpp
+icl: Command line warning: overriding '-O2' with '-O3'
+C:\DX8SDK\common\src\d3dapp.cpp(1568) : (col. 1) remark: ?Render3DEnvironment@CD3DApplication@@IAEJXZ has been targeted for automatic cpu dispatch.
+d3dfile.cpp
+C:\DX8SDK\common\src\d3dfile.cpp(277) : (col. 1) remark: ?Render@CD3DMesh@@QAEJPAUIDirect3DDevice8@@HH@Z has been targeted for automatic cpu dispatch.
+C:\DX8SDK\common\src\d3dfile.cpp(475) : (col. 1) remark: ?Render@CD3DFrame@@QAEJPAUIDirect3DDevice8@@HH@Z has been targeted for automatic cpu dispatch.
+d3dfont.cpp
+C:\DX8SDK\common\src\d3dfont.cpp(560) : (col. 1) remark: ?Render3DText@CD3DFont@@QAEJPADK@Z has been targeted for automatic cpu dispatch.
+C:\DX8SDK\common\src\d3dfont.cpp(331) : (col. 1) remark: ?GetTextExtent@CD3DFont@@QAEJPADPAUtagSIZE@@@Z has been targeted for automatic cpu dispatch.
+C:\DX8SDK\common\src\d3dfont.cpp(87) : (col. 1) remark: ?InitDeviceObjects@CD3DFont@@QAEJPAUIDirect3DDevice8@@@Z has been targeted for automatic cpu dispatch.
+d3dutil.cpp
+C:\DX8SDK\common\src\d3dutil.cpp(220) : (col. 1) remark: ?D3DUtil_GetRotationFromCursor@@YA?AUD3DXQUATERNION@@PAUHWND__@@M@Z has been targeted for automatic cpu dispatch.
+C:\DX8SDK\common\src\d3dutil.cpp(447) : (col. 1) remark: ?ScreenToVector@CD3DArcBall@@AAE?AUD3DXVECTOR3@@HH@Z has been targeted for automatic cpu dispatch.
+dxutil.cpp
+C:\DX8SDK\common\src\dxutil.cpp(261) : (col. 1) remark: ?DXUtil_Timer@@YGMW4TIMER_COMMAND@@@Z has been targeted for automatic cpu dispatch.
+Textures.cpp
+F:\Development\FSAA Tester\Textures.cpp(520): warning #68: integer conversion resulted in a change of sign
+          pVertices2[i+2].color    = D3DCOLOR_ARGB(255, 255-i, i*3, i*4);
+                                     ^
+
+F:\Development\FSAA Tester\Textures.cpp(1639): warning #167: argument of type "void *" is incompatible with parameter of type "HINSTANCE"
+   SendMessage(hWnd, WM_SETICON, ICON_SMALL, (LPARAM)LoadIcon(g_hInstance, MAKEINTRESOURCE(101)));
+                                                              ^
+
+F:\Development\FSAA Tester\Textures.cpp(1640): warning #167: argument of type "void *" is incompatible with parameter of type "HINSTANCE"
+   SendMessage(hWnd, WM_SETICON, ICON_BIG, (LPARAM)LoadIcon(g_hInstance, MAKEINTRESOURCE(101)));
+                                                            ^
+
+Linker-Vorgang läuft...
+xilink6: executing 'D:\PROGRA~1\MICROS~1\VC98\Bin\link.exe'
+LINK : warning LNK4089: Alle Verweise auf "d3dxof.dll" wurden durch /OPT:REF verworfen
+
+
+
+<h3>Ergebnisse</h3>
+FSAATest.exe - 0 Fehler, 5 Warnung(en)
+</pre>
+</body>
+</html>
